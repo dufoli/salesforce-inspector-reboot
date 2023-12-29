@@ -17,7 +17,21 @@
 .env.development.local
 .env.test.local
 .env.production.local
+*.xpi
+
+.history/
+
+# sf cli
+.sfdx/
+.sf/
+
+# IDE
+.idea/
+*.sublime-*
+target/
+venv/
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
