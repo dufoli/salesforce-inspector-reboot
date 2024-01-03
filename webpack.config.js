@@ -4,10 +4,13 @@ const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
     entry: {
-        index: "./src/index.tsx",
-        background: path.resolve(__dirname, 'src', 'background.ts'),
-        inspectInline: path.resolve(__dirname, 'src', 'inspect-inline.ts'),
-        button: path.resolve(__dirname, 'src', 'button.tsx')
+        //index: "./src/index.tsx",
+        //background: path.resolve(__dirname, 'src', 'background.ts'),
+        //inspectInline: path.resolve(__dirname, 'src', 'inspect-inline.ts'),
+        //links: path.resolve(__dirname, 'src', 'links.ts'),
+        //setupLinks: path.resolve(__dirname, 'src', 'setup-links.ts'),
+        //inspector: path.resolve(__dirname, 'src', 'inspector.ts'),
+        //button: path.resolve(__dirname, 'src', 'button.tsx')
     },
     mode: "production",
     module: {
@@ -36,7 +39,6 @@ module.exports = {
     plugins: [
         new CopyPlugin({
             patterns: [
-                { from: "manifest.json", to: "manifest.json" },
                 { from: "public"},
             ],
         }),
